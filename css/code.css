@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+}
+@media (max-width: 1600px) {
+  .container {
+    flex-direction: column;
+  }
+}
+.container .image {
+  flex: 1;
+  background-image: url(../images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.crad-front {
+  position: absolute;
+  background-image: url(../images/bg-card-front.png);
+  width: 447px;
+  height: 245px;
+  top: 220px;
+  left: 300px;
+  z-index: 2;
+  padding: 30px;
+  box-shadow: 40px 30px 20px #97919114;
+}
+@media (max-width: 1600px) {
+  .crad-front {
+    display: none;
+  }
+}
+.crad-front .imgs span:first-child {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #fff;
+}
+.crad-front .imgs span:last-child {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 1px solid #fff;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+.crad-front .serial-num {
+  margin-top: 60px;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.crad-front .about-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  margin-top: 25px;
+}
+.crad-front .about-card .date {
+  letter-spacing: 1.5px;
+}
+.crad-back {
+  position: absolute;
+  background-image: url(../images/bg-card-back.png);
+  width: 447px;
+  height: 245px;
+  top: 500px;
+  left: 400px;
+  z-index: 2;
+  box-shadow: 40px 30px 20px #97919114;
+}
+@media (max-width: 1600px) {
+  .crad-back {
+    display: none;
+  }
+}
+.crad-back span {
+  display: block;
+  position: absolute;
+  top: 45%;
+  left: 80%;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.container .form {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .form .complete-state {
+  display: none;
+  text-align: center;
+}
+.container .form .complete-state h2 {
+  margin-top: 20px;
+  color: hsl(278, 68%, 11%);
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+.container .form .complete-state p {
+  color: hsla(276, 2%, 61%, 0.878);
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+.container .form .complete-state button {
+  padding: 12px 15px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  display: block;
+  width: 350px;
+  margin-top: 20px;
+  background-color: hsl(278, 68%, 11%);
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  border: none;
+  cursor: pointer;
+}
+.container form {
+  display: block;
+}
+.container form h3 {
+  color: hsl(278, 68%, 11%);
+  font-size: 12px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+.container form .flex {
+  display: flex;
+}
+.container form .flex .left {
+  flex: 1;
+}
+.container form .input-one,
+.container form .input-two,
+.container form .input-three,
+.container form .input-four,
+.container form .input-five,
+.container form input[type="submit"] {
+  padding: 12px 15px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border: 1px solid hsl(270, 3%, 87%);
+  outline: none;
+  color: hsl(278, 68%, 11%);
+  font-weight: bold;
+  font-size: 16px;
+}
+.container form .input-one:focus,
+.container form .input-two:focus,
+.container form .input-three:focus,
+.container form .input-four:focus,
+.container form .input-five:focus {
+  border: 1px solid hsl(278, 68%, 11%);
+}
+.container form .input-one.error,
+.container form .input-two.error,
+.container form .input-three.error,
+.container form .input-four.error,
+.container form .input-five.error {
+  border: 1px solid #f00;
+}
+.container form .input-one.success,
+.container form .input-two.success,
+.container form .input-three.success,
+.container form .input-four.success,
+.container form .input-five.success {
+  border: 1px solid #0f0;
+}
+.container form .input-one::placeholder,
+.container form .input-two::placeholder,
+.container form .input-three::placeholder,
+.container form .input-four::placeholder,
+.container form .input-five::placeholder {
+  font-weight: normal;
+  color: hsl(270, 3%, 87%);
+}
+.container form .input-one {
+  display: block;
+  width: 350px;
+}
+.container form .input-two {
+  display: block;
+  width: 350px;
+}
+.container form .input-three {
+  display: inline-block;
+  width: 80px;
+  margin-right: 5px;
+}
+.container form .input-four {
+  display: inline-block;
+  width: 80px;
+}
+.container form .input-five {
+  display: inline-block;
+  width: 160px;
+}
+.container form input[type="submit"] {
+  display: block;
+  width: 350px;
+  margin-top: 35px;
+  background-color: hsl(278, 68%, 11%);
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  border: none;
+  cursor: pointer;
+}
+.errors {
+  color: #f00;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  visibility: hidden;
+}
+.container form .input-one.error ~ .errors,
+.container form .input-two.error ~ .errors,
+.container form .input-three.error ~ .errors,
+.container form .input-four.error ~ .errors,
+.container form .input-five.error ~ .errors {
+  visibility: visible;
+}
+.errors {
+  color: #f00;
+  font-size: 15px;
+}
