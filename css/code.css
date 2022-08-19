@@ -8,7 +8,7 @@
   min-height: 100vh;
   display: flex;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
   .container {
     flex-direction: column;
   }
@@ -31,7 +31,7 @@
   padding: 30px;
   box-shadow: 40px 30px 20px #97919114;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
   .crad-front {
     display: none;
   }
@@ -92,7 +92,7 @@
   z-index: 2;
   box-shadow: 40px 30px 20px #97919114;
 }
-@media (max-width: 1400px) {
+@media (max-width: 130px) {
   .crad-back {
     display: none;
   }
