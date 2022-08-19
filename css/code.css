@@ -92,7 +92,7 @@
   z-index: 2;
   box-shadow: 40px 30px 20px #97919114;
 }
-@media (max-width: 130px) {
+@media (max-width: 1300px) {
   .crad-back {
     display: none;
   }
